@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+acceso_docentes_usuario,acceso docentes usuario,model_docentes,group_docentes_usuario,1,0,0,0
+
+
+acceso_docentes_administrador,acceso docentes administrador,model_docentes,group_docentes_administrador,1,1,1,1

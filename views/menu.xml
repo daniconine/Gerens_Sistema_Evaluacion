@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <record id =  "action_open_docentes" model = "ir.actions.act_window">
+        <field name = "name">Docentes Gerens</field>
+        <field name = "res_model">docentes</field>
+        <field name = "view_mode">tree,form</field>
+    </record>
+
+    <menuitem id  = "menu_principal" name = "Docentes"/>
+    <menuitem id  = "menu_horizontal" name = "Mis Modelos" parent ="menu_principal"/>
+    <menuitem id  = "menu_vertical_docentes" name = "Docentes" parent = "menu_horizontal" action = "action_open_docentes"/>
+</odoo>
