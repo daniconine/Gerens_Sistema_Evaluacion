@@ -1,0 +1,62 @@
+use ana_rosa;
+
+CREATE TABLE Estudiante
+ (
+ id_estudiante int primary key not null,
+ Est_Primer_Nombre varchar(25),
+ Est_Segundo_Nombre varchar(25),
+ Est_Primer_Apellido varchar(25),
+ Est_Segundo_Apellido varchar(25),
+ Est_Tipo_Documento varchar(25),
+ Est_DNI int (15),
+ Est_Genero varchar(25),
+ Est_Fech_Nac date, 
+ Est_Prov_Nac varchar(25),
+ Est_celular int(15),
+ Est_Email varchar(40),
+ Est_Direccion varchar(80),
+ Est_Pais varchar(80),
+ Est_Prov_Direccion varchar(25),
+ Est_Distrito_Direccion varchar(25),
+ Est_Nivel_Formacion varchar(25),
+ Est_Fecha_Matricula date,
+ Est_Programa_Estudio varchar(25),
+ Est_Cond_Matri varchar(25),
+ Est_Periodo varchar(10),
+ Est_Ciclo varchar(25),
+ Est_Usuario varchar(25),
+ Est_Fecha_Actual date,
+ Est_Edad int(3)
+ );
+ 
+ 
+ use ana_rosa;
+CREATE TABLE Docente
+ (
+ id_docente int primary key not null,
+ Doc_Tipo_Documento varchar(25), 
+ Doc_DNI int (10),
+ Doc_Primer_Nombre varchar(25),
+ Doc_Segundo_Nombre varchar(25),
+ Doc_Primer_Apellido varchar(25),
+ Doc_Segundo_Apellido varchar(25),
+ Doc_celular VARCHAR(15),
+ Doc_Email varchar(40), 
+ Doc_Direccion varchar(80),
+ Doc_Prov_Direccion varchar(25),
+ Doc_Fech_Nac date,
+ Doc_Genero varchar(25),
+ Doc_Prov_Nac varchar(25),
+ Doc_estado varchar(10),
+ Doc_Usuario varchar(50),
+ Doc_codigo int
+ );
+ 
+ 
+ 
+ #consultas query
+use ana_rosa;
+select * from Docente;
+
+use ana_rosa;
+INSERT INTO Docente(
