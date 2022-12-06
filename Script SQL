@@ -53,6 +53,67 @@ CREATE TABLE Docente
  );
  
  
+use ana_rosa;
+CREATE TABLE Curso
+ (
+ id_curso int primary key not null AUTO_INCREMENT,
+ Cur_Nombre varchar(25),
+ id_programa int(20),
+ Cur_Pensum varchar(10),
+ Cur_Year_semestre varchar(10),
+ Cur_Ciclo varchar(4),
+ Cur_Email varchar(40), 
+ Cur_Inicio date,
+ Cur_Finalizacion date,
+ Cur_Estado varchar(25),
+ Cur_Total_horas int(4),
+ Cur_Num_matriculados int(4),
+ index (id_programa)
+ );
+ 
+ use ana_rosa;
+ CREATE TABLE Programa
+ (
+ id_programa int primary key not null AUTO_INCREMENT,
+ Prog_Nombre varchar(25),
+ Prog_Email varchar(40), 
+ Prog_Inicio date,
+ Prog_Finalizacion date,
+ Prog_Estado varchar(25),
+ Prog_Tipo varchar(20)
+ );
+ 
+ 
+ use ana_rosa;
+CREATE TABLE Notas
+ (
+ id_notas int primary key not null AUTO_INCREMENT,
+ Notas_Tipo varchar(25),
+ id_estudiante int(20),
+ id_curso int(20),
+ Notas_Fecha date,
+   
+ index (id_estudiante),
+ index (id_curso)
+ );
+
+
+use ana_rosa;
+CREATE TABLE Curso_Docente
+ (
+ id_curso int(20),
+ id_docente int(20),
+ CD_Fecha date, 
+ CD_Tipo_Docente varchar(10),
+ CD_Tipo_Curso varchar(10),
+ 
+ index (id_curso),
+ index (id_docente)
+ );
+ 
+ 
+
+ 
  
  #consultas query
 use ana_rosa;
