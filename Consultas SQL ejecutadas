@@ -1,0 +1,22 @@
+#consultas query
+
+#seleccionar la informacion de un tabla
+use ana_rosa;
+select * from Programa;
+
+#borrar datos de una tabla 
+ use ana_rosa;
+DELETE FROM Docente
+WHERE id_docente = 90043
+
+#modificar el ancho de datos de una columna
+ALTER TABLE Programa
+MODIFY Prog_Nombre
+varchar(40);
+
+#Inseertar datos en Tabla PRograma
+use ana_rosa;
+INSERT INTO Programa (id_programa, Prog_Nombre) VALUES 
+ ('01','Maestría en Gestión Minera'); 
+ 
+ 
