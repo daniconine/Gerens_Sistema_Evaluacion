@@ -96,6 +96,17 @@ CREATE TABLE Notas
  index (id_estudiante),
  index (id_curso)
  );
+ 
+  use ana_rosa;
+CREATE TABLE Resumen
+ (
+ id_resumen int primary key not null AUTO_INCREMENT,
+ Res_Tipo varchar(25),
+ id_curso int(20),
+ Valor int(3),
+   
+ index (id_curso)
+ );
 
 
 use ana_rosa;
