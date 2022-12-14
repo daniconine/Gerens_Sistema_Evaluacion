@@ -19,4 +19,30 @@ use ana_rosa;
 INSERT INTO Programa (id_programa, Prog_Nombre) VALUES 
  ('01','Maestría en Gestión Minera'); 
  
+ use ana_rosa;
+INSERT INTO Docente(id_docente, Doc_Primer_Nombre )
+	VAlUES("90043",)
  
+ use ana_rosa;
+DELETE FROM Docente
+WHERE id_docente = 90043
+
+ALTER TABLE Curso
+MODIFY Cur_Nombre
+varchar(100);
+
+use ana_rosa;
+INSERT INTO Programa (id_programa, Prog_Nombre) VALUES 
+ ('01','Maestría en Gestión Minera'); 
+ 
+use ana_rosa;
+ALTER TABLE Estudiante ADD Est_Cod_Matricula int(10) 
+AFTER id_estudiante;
+
+  
+ #consultas query
+use ana_rosa;
+select * from Docente;
+
+use ana_rosa;
+INSERT INTO Docente(
