@@ -130,4 +130,26 @@ CREATE TABLE Curso_Docente
  index (id_docente)
  );
  
+ 
+  use ana_rosa;
+CREATE TABLE Encuesta
+ (
+ id_estudiante int(20),
+ id_curso int(20),
+ id_docente int(20),
+ P01 varchar(10),
+ P02 varchar(10),
+ P03 varchar(10),
+ P04 varchar(10),
+ P05 varchar(10),
+ P06 varchar(10),
+ P07 varchar(10),
+ P08 varchar(10),
+ P09 varchar(10),
+ P10 varchar(1000),
+ 
+ index (id_estudiante),
+ index (id_curso),
+ index (id_docente)
+ );
 
