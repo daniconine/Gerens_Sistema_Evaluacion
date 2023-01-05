@@ -109,7 +109,7 @@ CREATE TABLE Resumen
  );
 
 
-use ana_rosa;
+ use ana_rosa;
 CREATE TABLE Curso_Docente
  (
  id_curso int(20),
@@ -117,7 +117,15 @@ CREATE TABLE Curso_Docente
  CD_Fecha date, 
  CD_Tipo_Docente varchar(10),
  CD_Tipo_Curso varchar(10),
- 
+ CD_Meet_Total float(8),
+ CD_Meet_Activo float(8),
+ CD_Meet_Porc float(8),
+ CD_Moodle_Total  float(8),
+ CD_Moodle_ACtivo float(8),
+ CD_Moodle_Porc float(8),
+ CD_Asistencia_Total int(2),
+ CD_Inasistencia int(2),
+ CD_Inasistencia_Porc float(8),
  index (id_curso),
  index (id_docente)
  );
