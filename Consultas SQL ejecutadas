@@ -46,3 +46,22 @@ select * from Docente;
 
 use ana_rosa;
 INSERT INTO Docente(
+
+
+#consultas query
+SET SQL_SAFE_UPDATES = 0;
+update Curso
+Set Cur_Nombre= "Laboratorio de Comunicación y Coaching II" where Cur_Nombre = "Desarrollo de habilidades gerenciales I" ;
+SET SQL_SAFE_UPDATES = 1;
+
+use ana_rosa;
+select Cur_Nombre, Cur_Pensum, Cur_Ciclo, id_curso
+from Curso Where Cur_Pensum = "2022" and Cur_Ciclo="C2";
+
+ANd Cur_Ciclo="C4";
+
+select*from Moodle;
+
+select*
+from Curso Where Cur_Pensum = "2022" and Cur_Ciclo="C2";
+
